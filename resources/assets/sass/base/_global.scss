@@ -1,0 +1,168 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	// text-align: center;
+	background-color: #313131;
+	color: #898989;
+	// color: rgba(175, 17, 28, 0.9); // blood red
+	text-align: left;
+	font-family: Roboto,sans-serif;
+	// background: url('/images/old5.jpg') no-repeat;
+	background-size: 100%;
+}
+
+header {
+	background: #111;
+	h1 {
+		padding: 0 15px;
+	}
+	nav {
+		height: 50px;
+		margin: 30px 30px 0;
+	}
+}
+
+footer {
+	padding: 30px;
+}
+
+card {
+	@include mp(10px);
+	@include border-radius(5px);
+	border:1px solid f7941d;
+	background: #212121;
+	width: 200px;
+	height: 350px;
+	overflow: hidden;
+	figure.img-wrap {
+		margin: 0 auto;
+		position: relative;
+		overflow: hidden;
+		height: 200px;
+		width: 100%;
+		img {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			display: block;
+			// max-width:100%;
+			max-height:100%;
+			// width:auto;
+			// height: auto;
+			margin: 0 auto;
+			// width: 100%;
+			object-fit: contain;
+		}
+	}
+	/* .img-wrap {
+		height: 145px;
+		width: 100%;
+		overflow: hidden;
+		img {
+			object-fit: cover;
+			height: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+	} */
+	span {
+		font-size: 0.8rem;
+	}
+}
+
+article {
+}
+
+header, h1 {
+	text-align: center;
+}
+
+.row {
+	flex: 1 1 auto;
+	display: flex;
+}
+
+header, footer {
+	flex: 0 0 auto;
+	background-color: #1e1e1e;
+	color: #ababab;
+}
+
+.primary-sidebar, .secondary-sidebar {
+	flex: 0 0 auto;
+	width: 250px;
+}
+
+.content {
+	flex: 1 1 auto;
+	min-width: 400px;
+}
+
+article, aside {
+	@include mp(15px 200px);
+	width: 50%;
+	float: left;
+
+	p {
+
+	}
+}
+
+a {
+	color: #f7941d;
+	border: 1px solid #f7941d;
+	padding: 5px;
+	border-radius:3px;
+	text-decoration: none;
+	// height: 2.5rem;
+    padding: 0.5rem 1.55rem;
+    font-size: .875rem;
+    font-weight: 400;
+    // line-height: 2.375rem;
+
+	&:hover {
+		color: #f26529;
+	}
+	// border-image: linear-gradient(to bottom right,#f7941d,#f26529);
+}
+
+a.btn-primary {
+    border-color: #f7941d;
+    background-color: #f7941d;
+    background: linear-gradient(#f7941d,#d97a08);
+    color: #fefefe;
+    // @include colors(red,red,red)
+}
+
+ul {
+	li {
+
+	}
+}
+
+hr {
+	height: 2px;
+	border: none;
+	background: linear-gradient(90deg,#ffed00 0,#f26529 75%);
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+.center {
+	text-align: center;
+}
+
+.clearfix:after, .clearfix:before {
+	content: ' ';
+	display: table;
+}

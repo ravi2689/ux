@@ -1,0 +1,17 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin colors($text, $background, $border) {
+	color: $text;
+	background-color: $background;
+	border-color: $border;
+}
+
+@mixin mp($size) {
+	margin: $size;
+	padding: $size;
+}
